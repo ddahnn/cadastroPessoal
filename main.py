@@ -1,4 +1,5 @@
 from modules.Cliente import Cliente
+from modules.Funcionario import Funcionario
 from repository.ClienteRepository import adicionar, localizar_cliente_por_cpf, exibir_Lista_Clientes, excluir_cliente_por_cpf
 
 # Criando cliente
@@ -16,12 +17,10 @@ print(exibir_Lista_Clientes())
 # Adicionando cliente ao "banco"
 adicionar(c1)
 adicionar(c2)
-adicionar(c3)
-adicionar(c4)
 adicionar(c5)
 adicionar(c6)
 adicionar(c7)
-adicionar(c8)
+
 
 print(" Realizando compras ")
 print(c1.adicionar_valor_compras(5000))   
@@ -46,3 +45,11 @@ print("Exibindo lista")
 print(exibir_Lista_Clientes())
 
 
+
+
+
+print(f"Área funcionario")
+
+f1 = Funcionario("adalberto","654.987.321-11", "lugar nenhum 666", "51 99999-9999", "21/01/1993", "000.0000.000-00", "05/06/2025", None)
+
+print(f1.Informacoes())
